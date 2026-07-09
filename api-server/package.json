@@ -13,8 +13,6 @@
     "@google-cloud/storage": "^7.21.0",
     "@types/express-session": "^1.19.0",
     "@types/multer": "^2.2.0",
-    "@workspace/api-zod": "workspace:*",
-    "@workspace/db": "workspace:*",
     "bcryptjs": "^3.0.3",
     "canvas": "^3.2.3",
     "cookie-parser": "^1.4.7",
