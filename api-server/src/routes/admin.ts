@@ -5,13 +5,13 @@ import { randomUUID } from "crypto";
 import path from "path";
 import fs from "fs";
 import os from "os";
-import { db, documentsTable, accessGrantsTable, usersTable, accessLogsTable } from "@workspace/db";
+import { db, documentsTable, accessGrantsTable, usersTable, accessLogsTable } from "../db";
 import { requireAdmin } from "../middlewares/auth";
 import {
   AdminGrantAccessBody,
   AdminDeleteDocumentParams,
   AdminRevokeAccessParams,
-} from "@workspace/api-zod";
+} from "../schemas";
 import { uploadPdf, deletePdf } from "../lib/objectStorage";
 
 const router: IRouter = Router();

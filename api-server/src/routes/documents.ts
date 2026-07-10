@@ -6,7 +6,7 @@ import { randomUUID } from "crypto";
 import path from "path";
 import fs from "fs";
 import os from "os";
-import { db, documentsTable, accessLogsTable } from "@workspace/db";
+import { db, documentsTable, accessLogsTable } from "../db";
 import { requireAuth } from "../middlewares/auth";
 import { downloadPdfToFile, downloadPdfToBuffer } from "../lib/objectStorage";
 

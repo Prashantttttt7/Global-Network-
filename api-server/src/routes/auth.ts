@@ -1,7 +1,7 @@
 import { Router, type IRouter } from "express";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
-import { db, usersTable, withDbRetry } from "@workspace/db";
+import { db, usersTable, withDbRetry } from "../db";
 import { logger } from "../lib/logger";
 
 const router: IRouter = Router();
